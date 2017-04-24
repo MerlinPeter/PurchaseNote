@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286A30349506A53309A4F12E /* Pods_PurchaseNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36616B20A1A949B8F2674301 /* Pods_PurchaseNoteTests.framework */; };
+		2C3B7CFF0803DA97FBDA24BE /* Pods_PurchaseNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6484A9B3AE9BC5BDD9EF0 /* Pods_PurchaseNote.framework */; };
+		7E33FD7C1EACBCDC0021A48C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E33FD7B1EACBCDC0021A48C /* GoogleService-Info.plist */; };
+		7E33FD7E1EACC21F0021A48C /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E33FD7D1EACC21F0021A48C /* Registration.swift */; };
+		B01123004721647530544610 /* Pods_PurchaseNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977D3DCFF9B4B8D83DD0248 /* Pods_PurchaseNoteUITests.framework */; };
 		D73690671EA5DF29007C2127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73690661EA5DF29007C2127 /* AppDelegate.swift */; };
 		D73690691EA5DF29007C2127 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73690681EA5DF29007C2127 /* ViewController.swift */; };
 		D736906C1EA5DF29007C2127 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D736906A1EA5DF29007C2127 /* Main.storyboard */; };
@@ -35,6 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042846734B71C36D4E8D4C10 /* Pods-PurchaseNoteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteTests/Pods-PurchaseNoteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		19B6484A9B3AE9BC5BDD9EF0 /* Pods_PurchaseNote.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseNote.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36616B20A1A949B8F2674301 /* Pods_PurchaseNoteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseNoteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3683196946DD354AA8E02C6B /* Pods-PurchaseNote.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNote.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNote/Pods-PurchaseNote.release.xcconfig"; sourceTree = "<group>"; };
+		5EFD292B0825FC71B8645F40 /* Pods-PurchaseNoteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteUITests/Pods-PurchaseNoteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D6B43C3D38E74C896C191C9 /* Pods-PurchaseNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteUITests/Pods-PurchaseNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		7BB91E781CDD57BDB5CD0A2D /* Pods-PurchaseNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNote/Pods-PurchaseNote.debug.xcconfig"; sourceTree = "<group>"; };
+		7E33FD7B1EACBCDC0021A48C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7E33FD7D1EACC21F0021A48C /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		8977D3DCFF9B4B8D83DD0248 /* Pods_PurchaseNoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseNoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B341086C377FF01D51E650C9 /* Pods-PurchaseNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteTests/Pods-PurchaseNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		D73690631EA5DF29007C2127 /* PurchaseNote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PurchaseNote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D73690661EA5DF29007C2127 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D73690681EA5DF29007C2127 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C3B7CFF0803DA97FBDA24BE /* Pods_PurchaseNote.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286A30349506A53309A4F12E /* Pods_PurchaseNoteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B01123004721647530544610 /* Pods_PurchaseNoteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8DBCCACCFDDA9B7617C8BED2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7BB91E781CDD57BDB5CD0A2D /* Pods-PurchaseNote.debug.xcconfig */,
+				3683196946DD354AA8E02C6B /* Pods-PurchaseNote.release.xcconfig */,
+				042846734B71C36D4E8D4C10 /* Pods-PurchaseNoteTests.debug.xcconfig */,
+				B341086C377FF01D51E650C9 /* Pods-PurchaseNoteTests.release.xcconfig */,
+				5EFD292B0825FC71B8645F40 /* Pods-PurchaseNoteUITests.debug.xcconfig */,
+				6D6B43C3D38E74C896C191C9 /* Pods-PurchaseNoteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D736905A1EA5DF29007C2127 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				D736907D1EA5DF29007C2127 /* PurchaseNoteTests */,
 				D73690881EA5DF29007C2127 /* PurchaseNoteUITests */,
 				D73690641EA5DF29007C2127 /* Products */,
+				8DBCCACCFDDA9B7617C8BED2 /* Pods */,
+				E5018BCB0475EDF9F5D52B0D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +133,11 @@
 		D73690651EA5DF29007C2127 /* PurchaseNote */ = {
 			isa = PBXGroup;
 			children = (
+				7E33FD7B1EACBCDC0021A48C /* GoogleService-Info.plist */,
 				D73690661EA5DF29007C2127 /* AppDelegate.swift */,
 				D73690681EA5DF29007C2127 /* ViewController.swift */,
 				D736906A1EA5DF29007C2127 /* Main.storyboard */,
+				7E33FD7D1EACC21F0021A48C /* Registration.swift */,
 				D73690701EA5DF29007C2127 /* Assets.xcassets */,
 				D73690721EA5DF29007C2127 /* LaunchScreen.storyboard */,
 				D73690751EA5DF29007C2127 /* Info.plist */,
@@ -128,6 +164,16 @@
 			path = PurchaseNoteUITests;
 			sourceTree = "<group>";
 		};
+		E5018BCB0475EDF9F5D52B0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19B6484A9B3AE9BC5BDD9EF0 /* Pods_PurchaseNote.framework */,
+				36616B20A1A949B8F2674301 /* Pods_PurchaseNoteTests.framework */,
+				8977D3DCFF9B4B8D83DD0248 /* Pods_PurchaseNoteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D736908E1EA5DF29007C2127 /* Build configuration list for PBXNativeTarget "PurchaseNote" */;
 			buildPhases = (
+				14C5B979846AF11E76A1559E /* [CP] Check Pods Manifest.lock */,
 				D736905F1EA5DF29007C2127 /* Sources */,
 				D73690601EA5DF29007C2127 /* Frameworks */,
 				D73690611EA5DF29007C2127 /* Resources */,
+				9B727271EED0B885E0E88EF6 /* [CP] Embed Pods Frameworks */,
+				C8C1325446DDA3ADD3441AA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +201,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D73690911EA5DF29007C2127 /* Build configuration list for PBXNativeTarget "PurchaseNoteTests" */;
 			buildPhases = (
+				AE8CBF3C90A570FD89E0AB62 /* [CP] Check Pods Manifest.lock */,
 				D73690761EA5DF29007C2127 /* Sources */,
 				D73690771EA5DF29007C2127 /* Frameworks */,
 				D73690781EA5DF29007C2127 /* Resources */,
+				539EF229EB38CE269F0C538E /* [CP] Embed Pods Frameworks */,
+				A30C0A48D43A1B4AC7A2FE02 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D73690941EA5DF29007C2127 /* Build configuration list for PBXNativeTarget "PurchaseNoteUITests" */;
 			buildPhases = (
+				42F31933FEEA92CA3A78CCB3 /* [CP] Check Pods Manifest.lock */,
 				D73690811EA5DF29007C2127 /* Sources */,
 				D73690821EA5DF29007C2127 /* Frameworks */,
 				D73690831EA5DF29007C2127 /* Resources */,
+				97E5D59806105CE0A0197C61 /* [CP] Embed Pods Frameworks */,
+				BF0E81F3D11CC468344B5B21 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D73690741EA5DF29007C2127 /* LaunchScreen.storyboard in Resources */,
+				7E33FD7C1EACBCDC0021A48C /* GoogleService-Info.plist in Resources */,
 				D73690711EA5DF29007C2127 /* Assets.xcassets in Resources */,
 				D736906C1EA5DF29007C2127 /* Main.storyboard in Resources */,
 			);
@@ -260,11 +316,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14C5B979846AF11E76A1559E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		42F31933FEEA92CA3A78CCB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		539EF229EB38CE269F0C538E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNoteTests/Pods-PurchaseNoteTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97E5D59806105CE0A0197C61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNoteUITests/Pods-PurchaseNoteUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B727271EED0B885E0E88EF6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNote/Pods-PurchaseNote-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A30C0A48D43A1B4AC7A2FE02 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNoteTests/Pods-PurchaseNoteTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AE8CBF3C90A570FD89E0AB62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BF0E81F3D11CC468344B5B21 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNoteUITests/Pods-PurchaseNoteUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8C1325446DDA3ADD3441AA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PurchaseNote/Pods-PurchaseNote-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D736905F1EA5DF29007C2127 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7E33FD7E1EACC21F0021A48C /* Registration.swift in Sources */,
 				D73690691EA5DF29007C2127 /* ViewController.swift in Sources */,
 				D736906F1EA5DF29007C2127 /* PurchaseNote.xcdatamodeld in Sources */,
 				D73690671EA5DF29007C2127 /* AppDelegate.swift in Sources */,
@@ -417,12 +612,13 @@
 		};
 		D736908F1EA5DF29007C2127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BB91E781CDD57BDB5CD0A2D /* Pods-PurchaseNote.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S36L8PTJAV;
 				INFOPLIST_FILE = PurchaseNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rajeshpeter-gmail.com.PurchaseNote";
+				PRODUCT_BUNDLE_IDENTIFIER = merlappletech.com.PurchaseNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -430,12 +626,13 @@
 		};
 		D73690901EA5DF29007C2127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3683196946DD354AA8E02C6B /* Pods-PurchaseNote.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S36L8PTJAV;
 				INFOPLIST_FILE = PurchaseNote/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "rajeshpeter-gmail.com.PurchaseNote";
+				PRODUCT_BUNDLE_IDENTIFIER = merlappletech.com.PurchaseNote;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -443,6 +640,7 @@
 		};
 		D73690921EA5DF29007C2127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 042846734B71C36D4E8D4C10 /* Pods-PurchaseNoteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -458,6 +656,7 @@
 		};
 		D73690931EA5DF29007C2127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B341086C377FF01D51E650C9 /* Pods-PurchaseNoteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -473,6 +672,7 @@
 		};
 		D73690951EA5DF29007C2127 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EFD292B0825FC71B8645F40 /* Pods-PurchaseNoteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S36L8PTJAV;
@@ -487,6 +687,7 @@
 		};
 		D73690961EA5DF29007C2127 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D6B43C3D38E74C896C191C9 /* Pods-PurchaseNoteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = S36L8PTJAV;
@@ -518,6 +719,7 @@
 				D73690901EA5DF29007C2127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D73690911EA5DF29007C2127 /* Build configuration list for PBXNativeTarget "PurchaseNoteTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +728,7 @@
 				D73690931EA5DF29007C2127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D73690941EA5DF29007C2127 /* Build configuration list for PBXNativeTarget "PurchaseNoteUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +737,7 @@
 				D73690961EA5DF29007C2127 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

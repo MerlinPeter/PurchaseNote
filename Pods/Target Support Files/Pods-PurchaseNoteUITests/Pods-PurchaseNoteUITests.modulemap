@@ -1,0 +1,6 @@
+framework module Pods_PurchaseNoteUITests {
+  umbrella header "Pods-PurchaseNoteUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
