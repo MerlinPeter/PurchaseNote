@@ -10,6 +10,7 @@
 		286A30349506A53309A4F12E /* Pods_PurchaseNoteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36616B20A1A949B8F2674301 /* Pods_PurchaseNoteTests.framework */; };
 		2C3B7CFF0803DA97FBDA24BE /* Pods_PurchaseNote.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B6484A9B3AE9BC5BDD9EF0 /* Pods_PurchaseNote.framework */; };
 		7E33FD7E1EACC21F0021A48C /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E33FD7D1EACC21F0021A48C /* Registration.swift */; };
+		7E3EA7F81EB997E300185947 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7E3EA7F71EB997E300185947 /* GoogleService-Info.plist */; };
 		B01123004721647530544610 /* Pods_PurchaseNoteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8977D3DCFF9B4B8D83DD0248 /* Pods_PurchaseNoteUITests.framework */; };
 		D715C64E1EB575B500CAEA17 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D715C64D1EB575B500CAEA17 /* ShoppingList.swift */; };
 		D73690671EA5DF29007C2127 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73690661EA5DF29007C2127 /* AppDelegate.swift */; };
@@ -50,6 +51,7 @@
 		6D6B43C3D38E74C896C191C9 /* Pods-PurchaseNoteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteUITests/Pods-PurchaseNoteUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7BB91E781CDD57BDB5CD0A2D /* Pods-PurchaseNote.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNote.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNote/Pods-PurchaseNote.debug.xcconfig"; sourceTree = "<group>"; };
 		7E33FD7D1EACC21F0021A48C /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		7E3EA7F71EB997E300185947 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8977D3DCFF9B4B8D83DD0248 /* Pods_PurchaseNoteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PurchaseNoteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B341086C377FF01D51E650C9 /* Pods-PurchaseNoteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PurchaseNoteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PurchaseNoteTests/Pods-PurchaseNoteTests.release.xcconfig"; sourceTree = "<group>"; };
 		D715C64D1EB575B500CAEA17 /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				D715C64D1EB575B500CAEA17 /* ShoppingList.swift */,
 				D73690701EA5DF29007C2127 /* Assets.xcassets */,
 				D73690721EA5DF29007C2127 /* LaunchScreen.storyboard */,
+				7E3EA7F71EB997E300185947 /* GoogleService-Info.plist */,
 				D73690751EA5DF29007C2127 /* Info.plist */,
 				D736906D1EA5DF29007C2127 /* PurchaseNote.xcdatamodeld */,
 			);
@@ -301,6 +304,7 @@
 			files = (
 				D73690741EA5DF29007C2127 /* LaunchScreen.storyboard in Resources */,
 				D73690981EADE191007C2127 /* GoogleService-Info.plist in Resources */,
+				7E3EA7F81EB997E300185947 /* GoogleService-Info.plist in Resources */,
 				D73690711EA5DF29007C2127 /* Assets.xcassets in Resources */,
 				D736906C1EA5DF29007C2127 /* Main.storyboard in Resources */,
 			);

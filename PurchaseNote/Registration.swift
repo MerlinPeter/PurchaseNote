@@ -112,7 +112,7 @@ class Registration: UIViewController {
  */
 
             
-                if let u = user{
+                if let _ = user{
                     
                     
                     let alert = UIAlertController(title: "Purchase Note", message: "User Created " , preferredStyle: UIAlertControllerStyle.alert)
