@@ -10,12 +10,12 @@ target 'PurchaseNote' do
   pod 'Firebase/Auth'
   target 'PurchaseNoteTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Firebase'
   end
 
   target 'PurchaseNoteUITests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'Firebase'
   end
   
 end
