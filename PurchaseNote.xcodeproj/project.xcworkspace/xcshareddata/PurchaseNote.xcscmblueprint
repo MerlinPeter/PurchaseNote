@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F3DCF460A482C876C3C87BF00FBF7FE717AC6858",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F3DCF460A482C876C3C87BF00FBF7FE717AC6858" : 9223372036854775807,
+    "2640EB86AF0BD6D3AD8E8229138683444FC9E610" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "60BF66FB-93B6-49A9-9713-F695A07748D4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F3DCF460A482C876C3C87BF00FBF7FE717AC6858" : "PurchaseNote\/",
+    "2640EB86AF0BD6D3AD8E8229138683444FC9E610" : "PurchaseNote\/PurchaseNote\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PurchaseNote",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PurchaseNote.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MerlinPeter\/PurchaseNote.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2640EB86AF0BD6D3AD8E8229138683444FC9E610"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MerlinPeter\/PurchaseNote.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F3DCF460A482C876C3C87BF00FBF7FE717AC6858"
+    }
+  ]
+}
