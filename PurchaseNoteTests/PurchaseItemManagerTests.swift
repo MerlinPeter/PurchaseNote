@@ -2,7 +2,7 @@
 //  PurchaseManagerTests.swift
 //  PurchaseNote
 //
-//  Created by Peter Joseph Karunanidhi on 5/3/17.
+//  Created by MA on 5/3/17.
 //  Copyright © 2017 Merlin Ahila. All rights reserved.
 //
 
