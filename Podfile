@@ -8,6 +8,8 @@ target 'PurchaseNote' do
   # Pods for PurchaseNote
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod  'Firebase/Database'
+  
   target 'PurchaseNoteTests' do
     inherit! :search_paths
     # Pods for testing

@@ -28,9 +28,28 @@ class PurchaseNoteUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
+    func testLoginPage() {
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let app = XCUIApplication()
+        
+        app.textFields["emailTestText"].tap()
+        
+        app.textFields["emailTestText"].typeText("merl@gmail.com")
+        let passtesttextSecureTextField = app.secureTextFields["passTestText"]
+        passtesttextSecureTextField.tap()
+        passtesttextSecureTextField.typeText("merl123")
+
+        let returnButton = app.buttons["loginTestBtn"]
+        returnButton.tap()
+        
+        
+        sleep(3)
+        
+        XCTAssert(app.tables["Your shopping List"].exists)
+        
+        
     }
     
 }

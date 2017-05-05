@@ -64,6 +64,8 @@ class Login: UIViewController {
             // check user isn't nil
             if let u1 = user{
                 
+                let userid = user?.uid
+                
                 self.performSegue(withIdentifier: "goToShoppingList", sender: nil)
            
             }

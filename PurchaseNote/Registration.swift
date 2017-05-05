@@ -9,7 +9,8 @@ import UIKit
 import Firebase
 
 class Registration: UIViewController {
-    
+    var ref: FIRDatabaseReference!
+
     @IBOutlet weak var EmailText: UITextField!
     
     @IBOutlet weak var PasswordText: UITextField!
@@ -22,7 +23,10 @@ class Registration: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        ref = FIRDatabase.database().reference()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -96,24 +100,17 @@ class Registration: UIViewController {
 
         
         FIRAuth.auth()?.createUser(withEmail: email!, password: password!) { (user, error) in
-             print("right")
-            
-           /* if (self.EmailText.text?.isEmpty ?? true) ||
-                (self.PasswordText.text?.isEmpty ?? true) ||
-                (self.ConformPassText.text?.isEmpty ?? true)
-                
-            {
-                let alert = UIAlertController(title: "Purchase Note", message: " " + (error?.localizedDescription)!, preferredStyle: UIAlertControllerStyle.alert)
-                
-                // add an action (button)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
- */
-
-            
+         
                 if let u = user{
                     
+                    let  uid = u.uid
+                    
+                    self.ref.child("groceryusers").child(uid).setValue(["username": u.email ,
+                                                                        "item_1" : "xx" ,
+                               "item_2":"xx" ])
+
+                    self.ref.child("groceryusers").child(uid).child("item_1").setValue(["name": "milk" ,"done": false])
+                    self.ref.child("groceryusers").child(uid).child("item_2").setValue(["name": "cake" ,"done": false])
                     
                     let alert = UIAlertController(title: "Purchase Note", message: "User Created " , preferredStyle: UIAlertControllerStyle.alert)
          
@@ -131,15 +128,59 @@ class Registration: UIViewController {
 
                     
                 else{
-                    let alert = UIAlertController(title: "Purchase Note", message: "User Creation Failed " + (error?.localizedDescription)!, preferredStyle: UIAlertControllerStyle.alert)
                     
-                    // add an action (button)
-                    alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                    print ()
-                }
-                // ...
+                    if error != nil {
+                        
+                        if let errCode = FIRAuthErrorCode(rawValue: error!._code) {
+                            
+                            switch errCode {
+                            case .errorCodeWrongPassword:
+                                
+                                let alert = UIAlertController(title: "Purchase Note", message: "WrongPassword." + (error?.localizedDescription)!, preferredStyle: UIAlertControllerStyle.alert)
+                                
+                                // add an action (button)
+                                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                                self.present(alert, animated: true, completion: nil)
+                                
+                                print("invalid creditial")
+                                
+                            case .errorCodeUserNotFound:
+                                
+                                let refreshAlert  = UIAlertController(title: "Purchase Note", message: "Email not registered", preferredStyle: UIAlertControllerStyle.alert)
+                                
+                                refreshAlert.addAction(UIAlertAction(title: "Register", style: .default, handler: { (action: UIAlertAction!) in
+                                    self.performSegue(withIdentifier: "loginToRegi", sender: nil)
+                                }))
+                                
+                                refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+                                    print("Handle Cancel Logic here")
+                                }))
+                                
+                                self.present(refreshAlert, animated: true, completion: nil)
+                                
+                                
+                                
+                            default:
+                                let refreshAlert  = UIAlertController(title: "Purchase Note", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.alert)
+                                
+                                refreshAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action: UIAlertAction!) in
+                                }))
+                                
+                                
+                                
+                                self.present(refreshAlert, animated: true, completion: nil)
+                                print("unknown error : \(error!)")
+                            }
+
+                        }else {
+                            print("all good... continue")
+                        }
+
                     }
+                   
+                }
+            
+            }
  
             
            

@@ -22,6 +22,7 @@
 		D736908A1EA5DF29007C2127 /* PurchaseNoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73690891EA5DF29007C2127 /* PurchaseNoteUITests.swift */; };
 		D73690981EADE191007C2127 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D73690971EADE191007C2127 /* GoogleService-Info.plist */; };
 		D736909A1EAEF385007C2127 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = D73690991EAEF385007C2127 /* Login.swift */; };
+		D74CD8C41EBAFE860094ED30 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74CD8C31EBAFE860094ED30 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		D736908B1EA5DF29007C2127 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D73690971EADE191007C2127 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D73690991EAEF385007C2127 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		D74CD8C31EBAFE860094ED30 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +150,7 @@
 				D73690721EA5DF29007C2127 /* LaunchScreen.storyboard */,
 				D73690751EA5DF29007C2127 /* Info.plist */,
 				D736906D1EA5DF29007C2127 /* PurchaseNote.xcdatamodeld */,
+				D74CD8C31EBAFE860094ED30 /* User.swift */,
 			);
 			path = PurchaseNote;
 			sourceTree = "<group>";
@@ -335,7 +338,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		42F31933FEEA92CA3A78CCB3 /* [CP] Check Pods Manifest.lock */ = {
@@ -350,7 +353,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		539EF229EB38CE269F0C538E /* [CP] Embed Pods Frameworks */ = {
@@ -425,7 +428,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BF0E81F3D11CC468344B5B21 /* [CP] Copy Pods Resources */ = {
@@ -471,6 +474,7 @@
 				D73690691EA5DF29007C2127 /* ViewController.swift in Sources */,
 				D736906F1EA5DF29007C2127 /* PurchaseNote.xcdatamodeld in Sources */,
 				D73690671EA5DF29007C2127 /* AppDelegate.swift in Sources */,
+				D74CD8C41EBAFE860094ED30 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
