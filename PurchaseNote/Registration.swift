@@ -104,15 +104,7 @@ class Registration: UIViewController {
                 if let u = user{
                     
                     let  uid = u.uid
-                    
-                    self.ref.child("groceryusers").child(uid).setValue(["username": u.email ,
-                                                                        "item_1" : "xx" ,
-                               "item_2":"xx" ])
-
-                    self.ref.child("groceryusers").child(uid).child("item_1").setValue(["name": "milk" ,"done": false])
-                    self.ref.child("groceryusers").child(uid).child("item_2").setValue(["name": "cake" ,"done": false])
-                    
-                    let alert = UIAlertController(title: "Purchase Note", message: "User Created " , preferredStyle: UIAlertControllerStyle.alert)
+                            let alert = UIAlertController(title: "Purchase Note", message: "User Created " , preferredStyle: UIAlertControllerStyle.alert)
          
          // add an action (button)
          let okAction = UIAlertAction(title: "OK", style: UIAlertActionStyle.default) {
@@ -188,11 +180,7 @@ class Registration: UIViewController {
     
     
     
-    @IBAction func backButton(_ sender: Any) {
-        
-        self.performSegue(withIdentifier: "RegiLogin", sender: nil)
-    }
-       
+   
     }
 
 
