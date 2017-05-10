@@ -22,6 +22,8 @@ class ShoppingList: UITableViewController {
     
     
     override func viewDidLoad() {
+        ref = FIRDatabase.database().reference()
+
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -29,8 +31,7 @@ class ShoppingList: UITableViewController {
     
         self.navigationController?.navigationBar.backItem?.title = "Anything Else"
         
-       // post()
-    }
+     }
     
  
     
@@ -39,6 +40,7 @@ class ShoppingList: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,24 +53,64 @@ class ShoppingList: UITableViewController {
         let groceryItem = itemarray[indexPath.row]
         
         cell.textLabel?.text = groceryItem.name
-        cell.detailTextLabel?.text = "merlin"
+        let convertPrice = String(groceryItem.price)
+        cell.detailTextLabel?.text = groceryItem.addedByUser + convertPrice
+        
+        if (groceryItem.completed) {
+            print(groceryItem.name)
+
+            print(groceryItem.completed)
+            cell.accessoryType = .checkmark
+            
+        }else{
+            cell.accessoryType = UITableViewCellAccessoryType.none
+            
+        }
+       // cell.detailTextLabel?.text = "10"
         //set cell contents
         
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+         let groceryItem = itemarray[indexPath.row]
+ 
+        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
+            
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+            let  key = ref.child("groceryusers").child("53WRSKN1HNOIT9g4zggPuEdzAjA2").child(groceryItem.key)
+            
+            key.updateChildValues(["completed": false])
+
+        }
+        else{
+            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+            let  key = ref.child("groceryusers").child("53WRSKN1HNOIT9g4zggPuEdzAjA2").child(groceryItem.key)
+            
+            key.updateChildValues(["completed": true])
+
+
+        }
+        
+    }
     
-  
+    func saveCheckbox(){
+        
+        
+       
+    }
+    
+    
     func fetchUser_2(){
         
         //all event
-        ref = FIRDatabase.database().reference()
         
 
         ref.child("groceryusers").child("53WRSKN1HNOIT9g4zggPuEdzAjA2").observe( .value, with: { (snapshot) in
             var itemarray_f : [groceryItem] = []
             for rest  in snapshot.children.allObjects as! [FIRDataSnapshot] {
-
+    
                 let gItem = groceryItem(snapshot: rest as! FIRDataSnapshot)
                      itemarray_f.append(gItem)
            
@@ -81,7 +123,6 @@ class ShoppingList: UITableViewController {
     
     @IBAction func addPressed(_ sender: Any) {
         
-        ref = FIRDatabase.database().reference()
         
         let alertController = UIAlertController(title: "Grocery Note", message: "Enter the item", preferredStyle: .alert)
         
@@ -97,10 +138,8 @@ class ShoppingList: UITableViewController {
                                         
                                         // 2
                                         
-                                        
-                                        let g_item = groceryItem( i_name: text,  i_done: false, i_user: "merlin")
-                                        
-                                        
+                                        let price : Int = 10
+                                        let g_item = groceryItem( i_name: text,  i_done: false, i_user: "merlin",i_price: 10 )
                                         let  key = self.ref.child("groceryusers").child("53WRSKN1HNOIT9g4zggPuEdzAjA2").childByAutoId().key
                                         let groceryItemRef = self.ref.child("groceryusers").child("53WRSKN1HNOIT9g4zggPuEdzAjA2").child(key)
                                         

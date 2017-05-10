@@ -15,24 +15,30 @@ class groceryItem :NSObject{
     var completed:Bool
     let key: String
     var addedByUser :String
+    var price : Int
     let ref: FIRDatabaseReference?
 
 
     
-    init(i_name:String , i_done:Bool, i_key:String = "" ,i_user:String){
+    init(i_name:String , i_done:Bool, i_key:String = "" ,i_user:String,i_price:Int){
         name = i_name
         completed = i_done
         key = i_key
         addedByUser = i_user
+        price = i_price
         self.ref = nil
+        
 
         
     }
     func toAnyObject() -> Any {
         return [
             "name": name,
-            "addedByUser": "merlin",
-            "completed": completed
+            "addedByUser": addedByUser,
+            "completed": completed,
+            "price": price
+          
+            
         ]
     }
   
@@ -43,6 +49,7 @@ class groceryItem :NSObject{
         name = snapshotValue["name"] as! String
         addedByUser = snapshotValue["addedByUser"] as! String
         completed = snapshotValue["completed"] as! Bool
+        price = snapshotValue["price"] as! Int
         ref = snapshot.ref
     }
     
