@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,31 +43,77 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Purchase Note" id="1wA-b3-rgv">
                         <barButtonItem key="backBarButtonItem" title="Back" id="Fgq-Pe-eu8"/>
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="5p4-f9-NPN">
-                            <connections>
-                                <action selector="backButton:" destination="Om1-O3-Hm4" id="QTT-Mq-evS"/>
-                                <segue destination="bVT-BK-Ewn" kind="show" id="CGh-aA-vZm"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="y5P-qf-tC6">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RcK-ls-e7j">
-                                <rect key="frame" x="276" y="37" width="83" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Add"/>
-                                <connections>
-                                    <action selector="addPressed:" destination="Om1-O3-Hm4" eventType="touchUpInside" id="GhQ-i5-IEh"/>
-                                </connections>
-                            </button>
-                            <connections>
-                                <action selector="addButtonPressed:" destination="Om1-O3-Hm4" id="GT2-sj-NuI"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem title="Signout" style="plain" id="wVQ-hB-KAL">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="reA-oe-vHd">
+                                    <rect key="frame" x="283" y="37" width="76" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Signout"/>
+                                </button>
+                            </barButtonItem>
+                            <barButtonItem title="Add" style="plain" id="y5P-qf-tC6">
+                                <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RcK-ls-e7j">
+                                    <rect key="frame" x="192" y="37" width="83" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <state key="normal" title="Add Item"/>
+                                    <connections>
+                                        <action selector="addPressed:" destination="Om1-O3-Hm4" eventType="touchUpInside" id="GhQ-i5-IEh"/>
+                                    </connections>
+                                </button>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO"/>
+                    <connections>
+                        <outlet property="navigation_item" destination="1wA-b3-rgv" id="UH7-4W-hMT"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1QI-V1-bDI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="222" y="-312"/>
+            <point key="canvasLocation" x="1620" y="-540"/>
+        </scene>
+        <!--Store  List-->
+        <scene sceneID="TZm-or-vnj">
+            <objects>
+                <tableViewController id="e7j-3u-aWG" customClass="StoreList" customModule="PurchaseNote" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="92" sectionHeaderHeight="28" sectionFooterHeight="28" id="tFa-gh-6cT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellid1" rowHeight="92" id="mUG-nL-GAc">
+                                <rect key="frame" x="0.0" y="28" width="375" height="92"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mUG-nL-GAc" id="PoW-53-u2n">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="91"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e7j-3u-aWG" id="4lx-eX-kqw"/>
+                            <outlet property="delegate" destination="e7j-3u-aWG" id="zUE-JB-HR7"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Store  List" id="MON-Yd-heB">
+                        <barButtonItem key="rightBarButtonItem" title="Add" style="plain" id="KYP-f3-LEy">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YOa-k1-2oV">
+                                <rect key="frame" x="276" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Store"/>
+                                <connections>
+                                    <action selector="addStore:" destination="e7j-3u-aWG" eventType="touchUpInside" id="Mhg-Ns-OkD"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Om1-O3-Hm4" kind="show" identifier="storetoitem" id="eCa-uR-gCZ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Dc-1D-4K3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="824.79999999999995" y="-540.17991004497753"/>
         </scene>
         <!--Login-->
         <scene sceneID="C2P-6d-6EG">
@@ -77,11 +124,11 @@
                         <viewControllerLayoutGuide type="bottom" id="6tX-rK-Nte"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Iqh-vy-jGz">
-                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cD1-RN-ZCJ">
-                                <rect key="frame" x="16" y="156" width="343" height="261"/>
+                                <rect key="frame" x="16" y="203" width="343" height="261"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Page" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHU-zb-DpK">
                                         <rect key="frame" x="107.5" y="0.0" width="128.5" height="30"/>
@@ -172,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EqT-at-0L7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1428" y="-311.69415292353824"/>
+            <point key="canvasLocation" x="-927" y="-334"/>
         </scene>
         <!--Registration-->
         <scene sceneID="BZU-Yf-f2d">
@@ -310,18 +357,15 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="Om1-O3-Hm4" kind="relationship" relationship="rootViewController" id="zBQ-Rc-Zww"/>
+                        <segue destination="e7j-3u-aWG" kind="relationship" relationship="rootViewController" id="SfP-CO-6Cu"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3GP-Zw-yAU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-633" y="-318"/>
+            <point key="canvasLocation" x="-1" y="-540"/>
         </scene>
     </scenes>
     <resources>
         <image name="Conform Password" width="16" height="16"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="CGh-aA-vZm"/>
-    </inferredMetricsTieBreakers>
 </document>
